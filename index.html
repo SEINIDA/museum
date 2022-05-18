@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>180-족자처럼 말려 올라갔다 내려오는 .slideUp() .slideDown().html</title>
+    <link rel="stylesheet" href="css/reset.css" />
+	  <link rel="stylesheet" href="css/style.css" />
+    <script src="js/function.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+
+      $(function(){
+
+    $('button').last().on('click', function(){
+      
+      $('.under').stop().slideUp(1000);
+      $('button').first().css({display : 'block'});
+      $('button').last().css({display : 'none'});
+      $('#opa').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '1'});
+    });
+
+
+    $('button').first().on('click', function(){
+      $('.under').stop().slideDown(1000);
+      $('button').first().css({display : 'none'});
+      $('button').last().css({display : 'block'});
+      $('#opa').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '0.3'});
+    });
+
+    const $gnbmnu = $('header>nav>ul.gnb>li');
+    
+    $gnbmnu.eq(0).on('mouseenter', function () {
+      $('ol.lnbone>li').css({display:'block'});
+      $('#opa').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '0.3'});
+      $('ol.lnbone>li').css({fontWeight : '800'});
+      $('ol.lnbone').css({backgroundColor : 'white'});
+    });
+
+    $gnbmnu.eq(0).on('mouseleave', function () {
+      $('ol.lnbone>li').css({display:'none'});
+      $('#opa').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '1'});
+    });
+
+    $gnbmnu.eq(1).on('mouseenter', function () {
+      $('ol.lnbtwo>li').css({display:'block'});
+      $('#opa').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '0.3'});
+      $('ol.lnbtwo>li').css({fontWeight : '800'});
+      $('ol.lnbtwo').css({backgroundColor : 'white'});
+    });
+
+    $gnbmnu.eq(1).on('mouseleave', function () {
+      $('ol.lnbtwo>li').css({display:'none'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '1'});
+      $('#opa').css({ opacity : '1'});
+      
+    });
+
+    $gnbmnu.eq(2).on('mouseenter', function () {
+      $('ol.lnbthree>li').css({display:'block'});
+      $('#opa').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '0.3'});
+      $('ol.lnbthree>li').css({fontWeight : '800'});
+      $('ol.lnbthree').css({backgroundColor : 'white'});
+    });
+
+    $gnbmnu.eq(2).on('mouseleave', function () {
+      $('ol.lnbthree>li').css({display:'none'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '1'});
+      $('#opa').css({ opacity : '1'});
+    });
+
+    $gnbmnu.eq(3).on('mouseenter', function () {
+      $('ol.lnbfour>li').css({display:'block'});
+      $('#opa').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '0.3'});
+      $('ol.lnbfour>li').css({fontWeight : '800'});
+      $('ol.lnbfour').css({backgroundColor : 'white'});
+    });
+
+    $gnbmnu.eq(3).on('mouseleave', function () {
+      $('ol.lnbfour>li').css({display:'none'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '1'});
+      $('#opa').css({ opacity : '1'});
+    });
+
+    $gnbmnu.eq(4).on('mouseenter', function () {
+      $('ol.lnbfive>li').css({display:'block'});
+      $('#opa').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '0.3'});
+      $('ol.lnbfive>li').css({fontWeight : '800'});
+      $('ol.lnbfive').css({backgroundColor : 'white'});
+    });
+
+    $gnbmnu.eq(4).on('mouseleave', function () {
+      $('ol.lnbfive>li').css({display:'none'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '1'});
+      $('#opa').css({ opacity : '1'});
+    });
+
+    $gnbmnu.eq(5).on('mouseenter', function () {
+      $('ol.lnbsix>li').css({display:'block'});
+      $('#opa').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '0.3'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '0.3'});
+      $('ol.lnbsix>li').css({fontWeight : '800'});
+      $('ol.lnbsix').css({backgroundColor : 'white'});
+    });
+
+    $gnbmnu.eq(5).on('mouseleave', function () {
+      $('ol.lnbsix>li').css({display:'none'});
+      $(' .slides > .slides-container > p.slide-1 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-2 ').css({ opacity : '1'});
+      $(' .slides > .slides-container > p.slide-3 ').css({ opacity : '1'});
+      $('#opa').css({ opacity : '1'});
+    });
+      });
+
+    </script>
+
+</head>
+<body>
+    <div id="wrap">
+      <header>
+          <h1>국립현대 미술관</h1>
+          <h2>회원가입</h2>
+          <div id="flexcon">
+          <h3>로그인</h3>
+          <h4>LANGUAGES : 한국어</h4>
+          <h5>이동</h5></div>
+
+          
+          <nav>
+              <ul class="gnb">
+                  <li><a href="#">관람·참여</a>
+                    <ol class="lnbone">
+                        <li><a href="#">서울</a></li>
+                        <li><a href="#">과천</a></li>
+                        <li><a href="#">덕수궁</a></li>
+                        <li><a href="#">청주</a></li>
+                        <li><a href="#">어린이미술관</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">통합예약</a></li>
+                        <li><a href="#">전시해설</a></li>
+                        <li><a href="#">레지던시</a></li>
+                        <li><a href="#">미술은행</a></li>
+                    </ol>
+                </li>
+
+                  <li><a href="#">전시</a>
+                    <ol class="lnbtwo">
+                        <li><a href="#">현재전시</a></li>
+                        <li><a href="#">예정전시</a></li>
+                        <li><a href="#">과거전시</a></li>
+                        
+                    </ol>
+                </li>
+                  <li><a href="#">교육</a>
+                    <ol class="lnbthree">
+                        <li><a href="#">미술관교육소개</a></li>
+                        <li><a href="#">어린이</a></li>
+                        <li><a href="#">청소년</a></li>
+                        <li><a href="#">교사</a></li>
+                        <li><a href="#">성인</a></li>
+                        <li><a href="#">교육자료실</a></li>
+                        <li><a href="#">참여신청</a></li>
+                     
+                    </ol>
+                </li>
+                  <li><a href="#">소장품</a>
+                    <ol class="lnbfour">
+                        <li><a href="#">소장품 검색</a></li>
+                        <li><a href="#">소장품 탐색</a></li>
+                        <li><a href="#">보존과학</a></li>
+                  
+                    </ol>
+                </li>
+                  <li><a href="#">미술연구</a>
+                    <ol class="lnbfive">
+                        <li><a href="#">도서와 아카이브</a></li>
+                        <li><a href="#">연구</a></li>
+                        <li><a href="#">발간자료</a></li>
+                  
+                      
+                    </ol></li>
+                  <li><a href="#">디지털미술관</a>
+                    <ol class="lnbsix">
+                        <li><a href="#">메인</a></li>
+                        <li><a href="#">오디오가이드</a></li>
+                        <li><a href="#">이용자갤러리</a></li>
+               
+                    </ol>
+                </li>
+
+                
+                 
+
+              </ul>
+          </nav>    
+            <div id="search">
+              <button>눌러라<img src="./images/search.png" alt="#" class="sch"></button>
+              <button>눌러라<img src="./images/x.png" alt="#" class="sch"></button>
+         
+      
+          <ol class="under">
+              <li><a href="#">검색어를 입력하세요</a></li>
+              
+          </ol>
+        </div>
+        <div id="opa">
+        <h6>국립현대미술관 관람 예약 바로가기</h6>
+        <div id="flexconn">
+        <p>전시관람 예약하기</p>
+        <p>디지털 정보실 예약하기</p>
+        </div>
+        <p class="date">화요일-일요일 10:00-18:00 (월요일 서울 개관)<br />
+          서울·덕수궁:수요일, 토요일 야간개장 10:00-21:00</p>
+</div>
+          <img src="./images/line.png" alt="#" class="line" style="margin-top: 100px;  margin-left: 120px;">
+          
+     
+      </header>
+     <section>   
+       	<div class="slides">
+            <div class="slides-container">
+              <p class="slide-1"><a href="#">slide-1</a></p>
+              <p class="slide-2"><a href="#">slide-2</a></p>
+              <p class="slide-3"><a href="#">slide-3</a></p>
+              <p class="slide-4"><a href="#">slide-4</a></p>
+              <p class="slide-5"><a href="#">slide-5</a></p>
+            </div>
+      
+            <ul class="slides-pagination">
+              <li><a href="#">one</a></li>
+              <li><a href="#">two</a></li>
+              <li><a href="#">three</a></li>
+              <li><a href="#">four</a></li>
+              <li><a href="#">five</a></li>
+            </ul>
+      
+            <a href="#" class="prev">이전</a>
+            <a href="#" class="next">다음</a>
+      
+            <span class="btn_auto">autoplay</span>
+          </div>
+   
+          <h1>[청주] MMCA 국제미술 소장품 기획전 &lt;&lt; 미술로, 세계로 &gt;&gt; </h1>
+          <h2>전시관람예약</h2>
+           <h3>2022-01-20~2022-06-12</h3>
+
+           <img src="./images/line.png" alt="#" class="line" style="margin-top: 50px;  margin-left: 70px;">
+
+           <h4>미술관</h4>
+
+           <figure style="display: inline-block;">
+           <img src="./images/미술관_서울.jpg" alt="#" style="width : 300px; margin-left: 100px;">
+          <figcaption style="margin-left: 100px; margin-top: 20px;"><strong style="color: black; font-size: 24px;">서울</strong><br />
+           <span style="display : inline-block; margin-top: 10px; color: #000;"> 월요일,화요일,목요일,금요일,일요일 10:00–18:00<br />
+            수요일, 토요일 야간개장 10:00–21:00</span><br />
+            <span style="display: inline-block; color: #000; margin-top: 10px; border: 1px solid #000; border-radius: 5px; padding: 10px;">전시</span>
+            <span style="display: inline-block; color: #000; margin-top: 10px; border: 1px solid #000; border-radius: 5px; padding: 10px;">필름앤비디오</span>
+            <span style="display: inline-block; color: #000; margin-top: 10px; border: 1px solid #000; border-radius: 5px; padding: 10px;">다원예술</span>
+            <span style="display: inline-block; color: #000; margin-top: 10px; border: 1px solid #000; border-radius: 5px; padding: 10px;">교육</span>
+            <span style="display: inline-block; color: #000; margin-top: 10px; border: 1px solid #000; border-radius: 5px; padding: 10px;">이벤트</span>
+             
+            </figcaption>
+          </figure>
+          
+          <figure style="display: inline-block; ">
+            <img src="./images/미술관_과천.jpg" alt="#" style="width : 300px; margin-left: 100px;">
+           <figcaption style="margin-left: 100px; margin-top: 20px;"><strong style="color: black; font-size: 24px;">과천</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: #000;"> 
+            
+              화요일–일요일(월요일 휴관), 10:00–18:00<br />
+             <br />
+             <span style="display: inline-block; color: #000; margin-top: 10px; border: 1px solid #000; border-radius: 5px; padding: 10px;">전시</span>
+             <span style="display: inline-block; color: #000; margin-top: 10px; border: 1px solid #000; border-radius: 5px; padding: 10px;">교육</span>
+             <span style="display: inline-block; color: #000; margin-top: 10px; border: 1px solid #000; border-radius: 5px; padding: 10px;">어린이 미술관</span>
+             <span style="display: inline-block; color: #000; margin-top: 10px; border: 1px solid #000; border-radius: 5px; padding: 10px;">이벤트</span>
+              
+             </figcaption>
+           </figure>
+        
+           <figure style="display: inline-block;">
+            <img src="./images/미술관_덕수궁.jpg" alt="#" style="width : 300px; margin-left: 100px;">
+           <figcaption style="margin-left: 100px; margin-top: 20px;"><strong style="color: black; font-size: 24px;">덕수궁</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: #000;"> 
+            
+              오늘은 휴관일 입니다.<br />
+             <br />
+             <span style="display: inline-block; color: #000; margin-top: 10px; border: 1px solid #000; border-radius: 5px; padding: 10px;">전시</span>
+
+              
+             </figcaption>
+           </figure>
+           
+           <figure style="display: inline-block;">
+            <img src="./images/미술관_청주.jpg" alt="#" style="width : 300px; margin-left: 100px;">
+           <figcaption style="margin-left: 100px; margin-top: 20px;"><strong style="color: black; font-size: 24px;">청주</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: #000;"> 
+            
+              오늘은 휴관일 입니다.<br />
+             <br />
+             <span style="display: inline-block; color: #000; margin-top: 10px; border: 1px solid #000; border-radius: 5px; padding: 10px;">전시</span>
+             <span style="display: inline-block; color: #000; margin-top: 10px; border: 1px solid #000; border-radius: 5px; padding: 10px;">이벤트</span>
+
+              
+             </figcaption>
+           </figure>
+
+           <img src="./images/line.png" alt="#" class="line" style="margin-top: 50px;  margin-left: 70px;">
+
+
+
+
+           <h4>전시</h4>
+
+           <figure style="display: inline-block; margin-left: 100px;">
+           <img src="./images/MMCA국제미술.png" alt="#" style="width : 300px; margin-left: 0px;">
+          <figcaption style="margin-left: 0px; margin-top: 20px;"><strong style="color: black; font-size: 24px;">청주</strong><br />
+           <span style="display : inline-block; margin-top: 10px; color: #000; font-size: 24px;
+           line-height: 30px; font-weight: 800;"> MMCA 국제미술 소장품 기획전<br />
+            &lt;&lt;미술로,세계로&gt;&gt;<br />
+            2022-01-20~2022-06-12
+          </span>
+          <br />
+
+            <span>
+              <img src="./images/icon_headphon.svg" alt="#" style="width: 30px;">
+              오디오가이드</span>
+           
+            </figcaption>
+          </figure>
+          
+         
+          <figure style="display: inline-block;  margin-left: 100px;">
+            <img src="./images/MMCA과천프로젝트.png" alt="#" style="width : 300px;">
+           <figcaption style=" margin-top: 20px;"><strong style="color: black; font-size: 24px;">과천</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: #000; font-size: 24px;
+            line-height: 30px; font-weight: 800;"> MMCA 과천프로젝트 2021:<br />예술버스쉼터_쓸모없는 건축과<br /> 유용한 조각에 대하여<br />
+         
+             2021-12-15~2022-11-20
+           </span>
+           <br />
+ 
+             <span>
+               <img src="./images/icon_headphon.svg" alt="#" style="width: 30px;">
+             </span>
+            
+             </figcaption>
+           </figure>
+           
+
+           <figure style="display: inline-block; margin-left: 100px;">
+            <img src="./images/아이웨이웨이.png" alt="#" style="width : 300px;">
+           <figcaption style=" margin-top: 20px;"><strong style="color: black; font-size: 24px;">서울</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: #000; font-size: 24px;
+            line-height: 30px; font-weight: 800;"> 아이 웨이웨이<br />
+              2022-01-20~2022-06-12 <br />
+           
+           </span>
+           <br />
+ 
+             <span>
+               <img src="./images/icon_headphon.svg" alt="#" style="width: 30px;">
+               오디오가이드</span>
+            
+             </figcaption>
+           </figure>
+          
+           
+           <figure style="display: inline-block; margin-left: 100px;">
+            <img src="./images/원형정원프로젝트.png" alt="#" style="width : 300px;">
+           <figcaption style="margin-top: 20px;"><strong style="color: black; font-size: 24px;">과천</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: #000; font-size: 24px;
+            line-height: 30px; font-weight: 800;">원형정원 프로젝트:달뿌리-느리고<br /> 빠른 대화
+             <br />
+             2021-10-08~2023-12-17
+           </span>
+           <br />
+           
+             <span>
+               <img src="./images/icon_headphon.svg" alt="#" style="width: 30px;">
+               오디오가이드</span>
+            
+             </figcaption>
+           </figure>
+           
+           <img src="./images/line.png" alt="#" class="line" style="margin-top: 50px;  margin-left: 70px;">
+           
+
+
+
+
+
+
+
+           <h4>수집품</h4>
+
+           <figure style="display: inline-block; margin-left: 100px;">
+           <img src="./images/국립현대미술관소장품1910-1920.jpg" alt="#" style="width : 300px; margin-left: 0px;">
+          <figcaption style="margin-left: 0px; margin-top: 20px;"><strong style="color: black; font-size: 24px;">청주</strong><br />
+           <span style="display : inline-block; margin-top: 10px; color: #000; font-size: 24px;
+           line-height: 30px; font-weight: 800;"> 국립현대미술관 소장품 300<br />
+           1910년대~1920년대<br />
+          
+          </span>
+          
+
+            
+              
+
+            </figcaption>
+          </figure>
+          
+         
+          <figure style="display: inline-block; margin-left: 100px;">
+            <img src="./images/국립현대미술관소장품1930-1940.png" alt="#" style="width : 300px;">
+           <figcaption style=" margin-top: 20px; "><strong style="color: black; font-size: 24px;">과천</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: #000; font-size: 24px;
+            line-height: 30px; font-weight: 800;"> 국립현대미술관 소장품 300<br />
+         
+            1930년대~1940년대
+           </span>
+           <br />
+ 
+           
+            
+             </figcaption>
+           </figure>
+           
+
+           <figure style="display: inline-block; margin-left: 100px;">
+            <img src="./images/국립현대미술관소장품1950-1960.png" alt="#" style="width : 300px;">
+           <figcaption style=" margin-top: 20px;"><strong style="color: black; font-size: 24px;">서울</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: #000; font-size: 24px;
+            line-height: 30px; font-weight: 800;"> 국립현대미술관 소장품 300<br />
+              1950년대~1960년대
+           
+           </span>
+           <br />
+ 
+           
+             </figcaption>
+           </figure>
+          
+           
+           <figure style="display: inline-block; margin-left: 100px;">
+            <img src="./images/국립현대미술관소장품1970-1980.png" alt="#" style="width : 300px;">
+           <figcaption style="margin-top: 20px;"><strong style="color: black; font-size: 24px;">과천</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: #000; font-size: 24px;
+            line-height: 30px; font-weight: 800;">국립현대미술관 소장품 300<br /> 
+            1970년대~1980년대
+           </span>
+           <br />
+           
+          
+             </figcaption>
+           </figure>
+           
+           <img src="./images/line.png" alt="#" class="line" style="margin-top: 50px;  margin-left: 70px;">
+
+
+           
+           <h4>디지털미술관</h4>
+
+           <figure style="display: inline-block; margin-left: 100px;">
+           <img src="./images/대지의시간_VR포스트.png" alt="#" style="width : 500px; margin-left: 0px;">
+          <figcaption style="margin-left: 0px; margin-top: 20px;"><strong style="color: black; font-size: 12px;">MMCA TV</strong><br />
+           <span style="display : inline-block; margin-top: 10px; color: #000; font-size: 24px;
+           line-height: 30px; font-weight: 800;">&lt;&lt;대지의 시간&gt;&gt; VR 포스트 시노그래피:<br /> 가상투영입자<br />
+           
+          </span>
+          <br />
+
+           
+           
+            </figcaption>
+          </figure>
+          
+         
+          <figure style="display: inline-block; margin-left: 100px;">
+            <img src="./images/대지의시간_참여작가인터뷰.png" alt="#" style="width : 500px;">
+           <figcaption style=" margin-top: 20px;"><strong style="color: black; font-size: 12px;">MMCA TV</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: #000; font-size: 24px;
+            line-height: 30px; font-weight: 800;">&lt;&lt;대지의 시간&gt;&gt; 참여작가 인터뷰-김주리
+            
+           </span>
+           <br /><br />
+ 
+           
+            
+             </figcaption>
+           </figure>
+           
+
+           <figure style="display: inline-block;  margin-left: 100px;">
+            <img src="./images/오늘이작품_베르나르트슐체_오펠리아.png" alt="#" style="width : 500px; ">
+           <figcaption style=" margin-top: 20px;"><strong style="color: black; font-size: 12px;">MMCA TV</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: #000; font-size: 24px;
+            line-height: 30px; font-weight: 800;"> [오늘, 이 작품]베르나르트<br />슐체 | 오펠리아 | 1985
+   
+           
+           </span>
+           <br />
+ 
+             
+            
+             </figcaption>
+           </figure>
+          
+           
+      
+           
+           <img src="./images/line.png" alt="#" class="line" style="margin-top: 50px;  margin-left: 70px;">
+           
+           <img src="./images/2022국립현대미술관_작품구입공모.jpg" alt="#" style="margin-left : 100px">
+
+            
+           <img src="./images/line.png" alt="#" class="line" style="margin-top: 50px;  margin-left: 70px;">
+
+
+           <h4>MMCA 뉴스레터</h4>
+
+           <figure style="display: inline-block;  margin-left: 100px;">
+           <img src="./images/레지던시.png" alt="#" style="width : 300px; margin-left: 0px;">
+          <figcaption style="margin-left: 0px; margin-top: 20px;"><strong style="color: black; font-size: 12px;">전시포커스</strong><br />
+           <span style="display : inline-block; margin-top: 10px; color: gray; font-size: 12px;
+           line-height: 30px; font-weight: 800;"> 2022뉴페이스! 고양레지던시 입주 작가들
+          </span>
+          <br />
+
+           
+           
+            </figcaption>
+          </figure>
+          
+         
+          <figure style="display: inline-block; margin-left: 100px;">
+            <img src="./images/미술관플러스_당신의취향을저격하는미술관홈페이지.png" alt="#" style="width : 300px;  ">
+           <figcaption style=" margin-top: 20px;"><strong style="color: black; font-size: 12px;">미술관 플러스</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: gray; font-size: 12px;
+            /* line-height: 30px; font-weight: 800;"> 당신의 취향을 저격하는 미술관 홈페이지,이용법은?
+           </span>
+           <br />
+ 
+             
+            
+             </figcaption>
+           </figure>
+           
+
+           <figure style="display: inline-block;  margin-left: 100px;">
+            <img src="./images/미술관플러스_올해의작가상2021_최찬숙작가 수상.png" alt="#" style="width : 300px; ">
+           <figcaption style=" margin-top: 20px;"><strong style="color: black; font-size: 12px;">미술관 플러스</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: gray; font-size: 12px;
+            line-height: 30px; font-weight: 800;"> &lt;&lt;올해의 작가상2021&gt;&gt;최찬숙 작가 수상
+           </span>
+           <br />
+ 
+           
+            
+             </figcaption>
+           </figure>
+
+             
+
+           <figure style="display: inline-block; margin-left: 100px;">
+            <img src="./images/미술관플러스_MMCA과전프로젝트_최종당선작은.png" alt="#" style="width : 300px;">
+           <figcaption style=" margin-top: 20px; "><strong style="color: black; font-size: 12px;">미술관 플러스</strong><br />
+            <span style="display : inline-block; margin-top: 10px; color: gray; font-size: 12px;
+            /* line-height: 30px; font-weight: 800;">  &lt;&lt;MMCA 과천프로젝트 2022:옥상정원&gt;&gt; 최종 당선작은?
+      
+           </span>
+           <br />
+ 
+          
+            
+             </figcaption>
+
+             
+           </figure>
+
+           <img src="./images/line.png" alt="#" class="line" style="margin-top: 50px;  margin-left: 70px;">
+
+           <figure style="display: inline-block;  margin-left: 100px;">
+            <img src="./images/미술은행.jpg" alt="#" style="width : 300px; margin-left: 0px;">
+           <figcaption style="margin-left: 0px; margin-top: 20px;"><strong style="color: black; font-size: 24px;">미술은행</strong>
+            <span style="display : inline-block; margin-top: 10px; color: gray; font-size: 14px;
+            line-height: 30px; margin-left: 130px; font-weight: 800; text-decoration: underline;"> 더 알아보기
+           </span>
+           <br />
+ 
+             
+             </figcaption>
+           </figure>
+           
+          
+           <figure style="display: inline-block; margin-left: 100px;">
+             <img src="./images/레지던시.jpg" alt="#" style="width : 300px;">
+            <figcaption style=" margin-top: 20px;"><strong style="color: black; font-size: 24px;">레지던시</strong>
+             <span style="display : inline-block; margin-left: 130px; margin-top: 10px; color: gray; font-size: 14px;
+             line-height: 30px; font-weight: 800; text-decoration: underline;"> 더 알아보기
+            </span>
+            <br />
+  
+            
+             
+              </figcaption>
+            </figure>
+            
+ 
+            <figure style="display: inline-block; margin-left: 100px;">
+             <img src="./images/도서와아카이브.jpg" alt="#" style="width : 300px; ">
+            <figcaption style=" margin-top: 20px;"><strong style="color: black; font-size: 24px;">도서와 아카이브</strong>
+             <span style="display : inline-block; margin-top: 10px; margin-left: 60px; text-decoration: underline; color: gray; font-size: 14px;
+             line-height: 30px; font-weight: 800;">더 알아보기
+            
+            </span>
+            <br />
+  
+             
+             
+              </figcaption>
+            </figure>
+ 
+              
+ 
+            <figure style="display: inline-block; margin-left: 100px;">
+             <img src="./images/어린이미술관.jpg" alt="#" style="width : 300px; ">
+            <figcaption style=" margin-top: 20px; "><strong style="color: black; font-size: 24px;">어린이미술관</strong>
+             <span style="display : inline-block; margin-left: 90px; margin-top: 10px; color: gray; font-size: 14px; text-decoration: underline;
+             line-height: 30px; font-weight: 800;"> 더 알아보기
+            </span>
+            <br />
+  
+            
+              </figcaption>
+            </figure>
+
+            
+           <img src="./images/line.png" alt="#" class="line" style="margin-top: 50px;  margin-left: 70px;">
+
+           <img src="./images/last.png" alt="#">
+    </div>
+</body>
+</html>
