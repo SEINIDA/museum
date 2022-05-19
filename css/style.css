@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+body{
+    overflow-x: hidden;
+}
 #wrap{
     width: 1904px;
     margin: 0 auto;
